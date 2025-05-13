@@ -21,7 +21,7 @@ public class PostsViewController {
     public String list(Model model) {
         model.addAttribute("appName", "Сентябрь горит");
         model.addAttribute("posts", postsService.listAllPosts());
-        return "list"; // без .html!
+        return "list";
     }
 
     @ResponseBody
